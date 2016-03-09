@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="col-xs-12 col-sm-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+        <img class="title" src="images/title.png" ng-click="refresh()" />
+        <button class="btn btn-default navbar-btn pull-right" ng-click="refresh()"><span class="glyphicon glyphicon-home"></span></button>
+    </div>
+</nav>
+
+<div class="row searchContainer white-text animate-show" ng-show="se">
+    <form class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+        <div class="form-group">
+            <h1>Minne haluat mennä?</h1>
+            <input type="text" id="message" name="message" class="form-control" rows="3" ng-model="message"></input>
+        </div>
+        <button class="btn btn-default col-xs-6 col-xs-offset-3" ng-click="getDestination()">Hae reitti</button>
+    </form>
+</div>
+
+<div class="row buttonContainer animate-show" ng-hide="but">
+    <div class="col-xs-12" ng-app="reittiHelperApp">
+        <div id="button1" class="col-xs-12 col-sm-3 col-sm-offset-2 choice"></div>
+        <div id="button2" class="col-xs-12 col-sm-3 col-sm-offset-2 choice"></div>
+    </div>
+</div>
+
+<div class="row mapContainer full ng-hide animate-show" ng-show="ma">
+    <div class="col-xs-12 full">
+        <div class="row full">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>

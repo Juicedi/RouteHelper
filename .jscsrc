@@ -1,0 +1,6 @@
+{
+  "requireCamelCaseOrUpperCaseIdentifiers": { allowedPrefix: ["opt_", /pfx\d+/] },
+  "requireCapitalizedConstructors": true,
+  "requireParenthesesAroundIIFE": true,
+  "validateQuoteMarks": "'"
+}
